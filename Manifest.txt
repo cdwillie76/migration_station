@@ -4,6 +4,9 @@ Manifest.txt
 PostInstall.txt
 README.txt
 Rakefile
+app_generators/migration_station/USAGE
+app_generators/migration_station/migration_station_generator.rb
+bin/migration_station
 config/hoe.rb
 config/requirements.rb
 lib/migration_station.rb
@@ -16,8 +19,10 @@ setup.rb
 tasks/deployment.rake
 tasks/environment.rake
 tasks/website.rake
+test/test_generator_helper.rb
 test/test_helper.rb
 test/test_migration_station.rb
+test/test_migration_station_generator.rb
 website/index.html
 website/index.txt
 website/javascripts/rounded_corners_lite.inc.js
