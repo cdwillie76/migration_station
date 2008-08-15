@@ -6,6 +6,8 @@ README.txt
 Rakefile
 app_generators/migration_station/USAGE
 app_generators/migration_station/migration_station_generator.rb
+app_generators/migration_station/templates/Rakefile
+app_generators/migration_station/templates/config/database.yml
 bin/migration_station
 config/hoe.rb
 config/requirements.rb

@@ -18,14 +18,11 @@ class MigrationStationGenerator < RubiGen::Base
   def manifest
     record do |m|
       # Ensure appropriate folder(s) exists
-      # m.directory ''
-      # BASEDIRS.each { |path| m.directory path }
+      m.directory ''
+      BASEDIRS.each { |path| m.directory path }
 
       # Create stubs
-      # m.template "template.rb",  "some_file_after_erb.rb"
-      # m.template_copy_each ["template.rb", "template2.rb"]
-      # m.file     "file",         "some_file_copied"
-      # m.file_copy_each ["path/to/file", "path/to/file2"]
+      m.template_copy_each ["Rakefile", "config/database.yml"]
 
       m.dependency "install_rubigen_scripts", [destination_root, 'migration_station'],
         :shebang => options[:shebang], :collision => :force
@@ -62,10 +59,9 @@ EOS
     # Installation skeleton.  Intermediate directories are automatically
     # created so don't sweat their absence here.
     BASEDIRS = %w(
-      lib
-      log
+      config
+      db
+      db/migrate
       script
-      test
-      tmp
     )
 end
