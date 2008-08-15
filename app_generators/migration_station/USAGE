@@ -1,5 +1,5 @@
 Description:
-  
-  
+  Provides a framework to execute Rails style ActiveRecord migrations for versioning your database modifications. 
 Usage:
+  migration_station NameOfYourStation
   
