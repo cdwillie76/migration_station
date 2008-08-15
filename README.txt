@@ -37,7 +37,7 @@ cd ..
 migration_station MyMigrationStation
 cd MyMigrationStation
 rake -T
-
+(note: none of the Rake tasks are functioning, this simply demonstrates feature capability)
 
 == LICENSE:
 
