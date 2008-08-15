@@ -27,6 +27,18 @@ cd ProjectName
 .script/generate migration AddAgeToUser
 rake migrate
 
+
+== INSTALL & TEST
+
+git clone git://github.com/mwilliams/migration_station.git
+cd migration_station
+rake local_deploy
+cd ..
+migration_station MyMigrationStation
+cd MyMigrationStation
+rake -T
+
+
 == LICENSE:
 
 (The MIT License)
