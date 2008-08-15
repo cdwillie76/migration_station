@@ -15,8 +15,10 @@ lib/migration_station.rb
 lib/migration_station/version.rb
 migration_station_generators/migration/USAGE
 migration_station_generators/migration/migration_generator.rb
+migration_station_generators/migration/templates/migration.rb
 migration_station_generators/table_migration/USAGE
 migration_station_generators/table_migration/table_migration_generator.rb
+migration_station_generators/table_migration/templates/migration.rb
 script/console
 script/destroy
 script/generate
