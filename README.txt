@@ -4,6 +4,29 @@
 
 All aboard!  Do you love the way Rails handles migrations?  Do you have non-Rails projects that could benefit from migrations?  Well set yourself up a migration station and get to work! 
 
+
+== PROPOSED MIGRATION GENERATORS:
+* table_migration - This migration will [eventually] generate the same 
+style migrations that are generated when creating a Rails model.  Proposed 
+syntax: script/generate table_migration Users first_name:text 
+last_name:text to generate the up and down migration methods filled with 
+the appropriate information from the arguments.
+
+* migration - This generates a standard migration.  If possible (this is 
+where help will come in handy!), establish the Rails style 
+"script/generate migration AddAgeToUsers" to generate the 
+migration with the up and down migration methods adding and removing the 
+column from the table stated in the argument.
+
+
+== PROPOSED USAGE
+
+migration_station ProjectName
+cd ProjectName
+.script/generate table_migration User first_name:text last_name:text
+.script/generate migration AddAgeToUser
+rake migrate
+
 == LICENSE:
 
 (The MIT License)
