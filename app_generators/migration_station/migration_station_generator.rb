@@ -18,8 +18,8 @@ class MigrationStationGenerator < RubiGen::Base
   def manifest
     record do |m|
       # Ensure appropriate folder(s) exists
-      m.directory ''
-      BASEDIRS.each { |path| m.directory path }
+      # m.directory ''
+      # BASEDIRS.each { |path| m.directory path }
 
       # Create stubs
       # m.template "template.rb",  "some_file_after_erb.rb"
